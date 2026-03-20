@@ -6,7 +6,7 @@ def load_css():
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 def show_login():
     # Load logo
-    logo_path = r"New_logo-removebg-preview.png"
+    logo_path = "New_logo-removebg-preview.png"
     logo = Image.open(logo_path)
 
     # Load users database
