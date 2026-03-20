@@ -13,10 +13,6 @@ if "logged_in" not in st.session_state:
 if "page" not in st.session_state:
     st.session_state.page = "executive"
 
-# if "date_range" not in st.session_state:
-#     st.session_state.date_range = (min_date, max_date)
-
-
 # Routing
 if not st.session_state.logged_in:
     show_login()
