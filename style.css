@@ -1,0 +1,240 @@
+
+/*MAIN BACKGROUND*/
+
+.stApp {
+            background: linear-gradient(180deg,#0f172a,#020617);
+            color: #e2e8f0;
+        }
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+section[data-testid="stSidebar"] {
+            background: #020617;
+            border-right: 1px solid #1e293b;
+        }
+
+/* SIDEBAR TEXT */
+	section[data-testid="stSidebar"] * {
+            color: #e2e8f0;
+        }
+/* BUTTON STYLE */
+.stButton button {
+            background: linear-gradient(135deg,#6366f1,#4f46e5);
+            color: white;
+            border-radius: 10px;
+            height: 3em;
+            font-weight: 600;
+            border: none;
+            transition: all 0.2s ease;
+}
+
+.stButton button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 12px rgba(79,70,229,0.4);
+}
+
+/* INPUT BOX */
+.stTextInput input {
+background-color: #1e293b;
+color: #e2e8f0;
+border-radius: 8px;
+border: 1px solid #334155;
+}
+
+/* SELECT BOX */
+.stSelectbox div[data-baseweb="select"] {
+background-color: #1e293b;
+border-radius: 8px;
+}
+
+/* DATAFRAME STYLE */
+.stDataFrame {
+background-color: #1e293b;
+border-radius: 10px;
+border: 1px solid #334155;
+}
+
+/* HEADINGS */
+h1 {
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+color: #FFFF00 !important;
+margin-bottom: 20px;
+}
+
+
+        
+        
+/* DIVIDERS */
+hr {
+     border-color: #1e293b;
+    }
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+          width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+}
+
+/*KPI CARDS*/
+
+.metric-box{
+
+border:1px solid rgba(255,255,255,0.15);
+border-radius:12px;
+padding:14px;
+text-align:center;
+
+background:linear-gradient(
+145deg,
+rgba(255,255,255,0.06),
+rgba(255,255,255,0.02)
+);
+
+backdrop-filter:blur(6px);
+transition:all 0.25s ease;
+height:110px;
+
+/* center content */
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+}
+
+/* KPI Hover */
+
+.metric-box:hover{
+border:1px solid #FFD700;
+transform:translateY(-3px);
+box-shadow:
+0 0 10px rgba(255,215,0,0.6),
+0 0 18px rgba(255,215,0,0.25);
+}
+
+/*KPI TEXT*/
+
+.metric-title{
+font-size:12px;
+letter-spacing:0.5px;
+color:#FFD700;
+text-transform:uppercase;
+margin-bottom:4px;
+}
+
+.metric-value{
+font-size:24px;
+font-weight:700;
+line-height:1.2;
+}
+
+.metric-sub{
+font-size:11px;
+color:#cbd5e1;
+margin-top:2px;
+}
+
+/* PLOTLY CHART CONTAINER*/
+
+/* =============================  
+STATIC CHART BOX  
+============================= */
+
+div[data-testid="stPlotlyChart"]{
+
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.15);
+
+background:linear-gradient(145deg,#1e293b,#243247);
+
+/* LOCK SIZE */
+height:420px;
+min-height:420px;
+max-height:420px;
+
+/* CENTER GRAPH */
+display:flex;
+align-items:center;
+justify-content:center;
+
+/* PREVENT MOVEMENT */
+overflow:hidden;
+
+/* ONLY BORDER CHANGE */
+transition:border 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+/* HOVER EFFECT */
+
+div[data-testid="stPlotlyChart"]:hover{
+
+border:1px solid #FFD700;
+
+box-shadow:
+0 0 10px rgba(255,215,0,0.6),
+0 0 20px rgba(255,215,0,0.25);
+
+}
+
+/* PREVENT COLUMN SHIFTING */
+
+div[data-testid="column"]{
+align-items:stretch !important;
+}
+/*TABLE*/
+
+[data-testid="stDataFrame"]{
+background:#1e293b;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.15);
+padding:5px;
+}
+
+
+::-webkit-scrollbar-track{
+background:#1e293b;
+}
+
+::-webkit-scrollbar-thumb{
+background:#FFD700;
+border-radius:10px;
+}
+
+
+/* Hover effect */
+section[data-testid="stSidebar"] .stButton button:hover{
+
+background-color:#FFC300;
+color:black;
+box-shadow:0 0 10px rgba(255,215,0,0.6);
+
+}
+
+
+.kpi-card {
+    background-color: #f5f5f5;   /* light grey */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.2);
+}
