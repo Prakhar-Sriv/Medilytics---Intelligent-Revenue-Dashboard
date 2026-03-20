@@ -1,13 +1,10 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-from style import apply_theme
+def load_css():
+        with open("style.css") as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 def show_login():
-
-    
-
-    apply_theme()
-   
     # Load logo
     logo_path = r"C:\Users\Prakhar\Downloads\New_logo-removebg-preview.png"
     logo = Image.open(logo_path)
